@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SymbiansLab - Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --text-main: #ffffff;
+      --text-sub: rgba(255, 255, 255, 0.6);
+      --highlight: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+      text-align: center;
+      position: relative;
+    }
+
+    .glow {
+      position: absolute;
+      bottom: -30vh;
+      width: 200vw;
+      height: 200vh;
+      background: radial-gradient(ellipse at center, rgba(255,255,255,0.08) 0%, transparent 60%);
+      z-index: 0;
+    }
+
+    .content {
+      z-index: 1;
+      max-width: 90%;
+      padding: 2rem;
+      animation: fadeIn 1.5s ease-out both;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    p.subtext {
+      font-size: 1rem;
+      color: var(--text-sub);
+      margin-bottom: 2rem;
+    }
+
+    a.button {
+      padding: 0.75rem 1.5rem;
+      background: white;
+      color: #000;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+    }
+
+    a.button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 30px rgba(255, 255, 255, 0.15);
+    }
+
+    .credit {
+      font-size: 0.75rem;
+      color: var(--text-sub);
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 4rem;
+      }
+
+      p.subtext {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+
+  <div class="content">
+    <h1>We’re launching soon.</h1>
+    <p class="subtext">Something meaningful is on the way at SymbiansLab. Stay tuned.</p>
+    <a class="button" href="mailto:sudnyeshnehare11@gmail.com">Contact Us</a>
+
+    <div class="credit">
+    by <a href="https://portfolio-gamma-seven-86.vercel.app/" target="_blank" style="color: white;">Sudnyesh Nehare</a>
+    </div>
+  </div>
+</body>
+</html>
